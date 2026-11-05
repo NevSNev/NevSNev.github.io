@@ -152,6 +152,28 @@
         }
         .tag-btn:hover { background-color: #555; }
 
+        /* Review history: a secondary note alongside the preprint. */
+        .paper-item[id] { scroll-margin-top: 24px; }
+        .review-note {
+            --review-color: #287267;
+            margin: 0 0 18px;
+            padding: 12px 14px;
+            border-left: 3px solid var(--review-color);
+            border-radius: 0 7px 7px 0;
+            background: #f5f8f7;
+            font-size: 0.82rem;
+            line-height: 1.6;
+        }
+        .review-note--cycle { --review-color: #5265a8; background: #f6f7fb; }
+        .review-note__heading { display: flex; flex-wrap: wrap; gap: 2px 8px; align-items: baseline; }
+        .review-note__heading strong { color: var(--review-color); font-weight: 650; }
+        .review-note__stage { color: #606870; }
+        .review-note__scores { margin-top: 5px; color: #4c545b; }
+        .review-note__scores b { color: #303a43; font-variant-numeric: tabular-nums; font-weight: 600; }
+        .review-note__mean { white-space: nowrap; }
+        .review-note__link { color: var(--review-color); display: inline-block; margin-top: 6px; text-underline-offset: 3px; }
+        .review-note__link:focus-visible { outline: 2px solid var(--review-color); outline-offset: 3px; }
+
         /* 手机适配 */
         @media (max-width: 768px) {
             .paper-item { flex-direction: column; align-items: flex-start; }
@@ -190,7 +212,7 @@
                 <h2>Research Publications</h2>
             </div>
 
-            <div class="paper-item">
+            <div class="paper-item" id="worldcycle">
                 <div class="paper-thumb">
                     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;width:100%;">
                         <div>
@@ -210,7 +232,12 @@
                 <div class="paper-info">
                     <div class="paper-title">WorldCycle: Self-Verifiable Reinforcement Learning for Long-Horizon Video World Models</div>
                     <div class="paper-authors">Bohai Gu, Yueyang Yuan, Taiyi Wu, Dazhao Du, Jian Liu, Xiaoyi Pang, Jie Zhang, Xiaocheng Lu, Haobin Zhong, Xiaotong Zhao, Alan Zhao, Song Guo</div>
-                    <div class="paper-venue">Under review</div>
+                    <div class="paper-venue">arXiv preprint</div>
+                    <div class="review-note review-note--cycle" aria-label="WorldCycle review status">
+                        <div class="review-note__heading"><strong>AAAI</strong><span class="review-note__stage">&middot; Final review stage</span></div>
+                        <div class="review-note__scores">Reviewer scores <b>7 / 6 / 6 / 6 / 5</b> &nbsp;&middot;&nbsp; <span class="review-note__mean">Mean <b>6.0</b></span></div>
+                        <a class="review-note__link" href="https://nevsnev.github.io/Worldcycle/#peer-review">Review details &rarr;</a>
+                    </div>
                     <div class="btn-group">
                         <a href="https://arxiv.org/abs/2608.04964" class="tag-btn">pdf</a>
                         <a href="https://nevsnev.github.io/Worldcycle/" class="tag-btn">project</a>
@@ -219,14 +246,19 @@
                 </div>
             </div>
 
-            <div class="paper-item">
+            <div class="paper-item" id="worldcraft">
                 <div class="paper-thumb">
                     <img src="images/worldcraft.gif" alt="WorldCraft" onerror="this.src='https://via.placeholder.com/600x330?text=WorldCraft+GIF'">
                 </div>
                 <div class="paper-info">
                     <div class="paper-title">WorldCraft: From Camera Navigation to Object Manipulation in Interactive Video World Models</div>
                     <div class="paper-authors">Bohai Gu, Taiyi Wu, Yueyang Yuan, Jian Liu, Xiaocheng Lu, Dazhao Du, Jie Zhang, Jinxiang Lai, Shuai Yang, Xiaotong Zhao, Alan Zhao, Song Guo</div>
-                    <div class="paper-venue">Under review</div>
+                    <div class="paper-venue">arXiv preprint</div>
+                    <div class="review-note" aria-label="WorldCraft review history">
+                        <div class="review-note__heading"><strong>NeurIPS 2026</strong><span class="review-note__stage">&middot; Not accepted</span></div>
+                        <div class="review-note__scores">Reviewer scores <b>5 / 4 / 4 / 3</b> &nbsp;&middot;&nbsp; <span class="review-note__mean">Mean <b>4.0</b></span></div>
+                        <a class="review-note__link" href="https://nevsnev.github.io/WorldCraft/#peer-review">Review details &rarr;</a>
+                    </div>
                     <div class="btn-group">
                         <a href="https://arxiv.org/abs/2605.25077" class="tag-btn">pdf</a>
                         <a href="https://nevsnev.github.io/WorldCraft/" class="tag-btn">project</a>
