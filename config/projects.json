@@ -1,0 +1,34 @@
+[
+  {
+    "title": "WorldCycle · Project Page",
+    "image": "assets/publications/worldcycle.png",
+    "meta": "Video World Model",
+    "text": "Interactive project page for WorldCycle — including peer-review details, qualitative rollouts, and comparison videos against WorldPlay and WorldCompass.",
+    "action": "demo",
+    "link": "https://nevsnev.github.io/Worldcycle/"
+  },
+  {
+    "title": "WorldCraft · Project Page",
+    "image": "assets/publications/worldcraft.gif",
+    "meta": "Interactive Video",
+    "text": "Project page for WorldCraft covering camera navigation and object manipulation within a single controllable video generator, with method overview and demos.",
+    "action": "demo",
+    "link": "https://nevsnev.github.io/WorldCraft/"
+  },
+  {
+    "title": "Place-it-R1 · Project Page",
+    "image": "assets/publications/place-r1.gif",
+    "meta": "Video Editing",
+    "text": "Project page for region-aware, physics-grounded video object insertion with preference-optimized generation.",
+    "action": "demo",
+    "link": "https://nevsnev.github.io/Place-it-R1/"
+  },
+  {
+    "title": "FloED · Code",
+    "image": "assets/publications/floed.gif",
+    "meta": "Video Inpainting",
+    "text": "Open-source implementation of FloED, an optical-flow-guided efficient diffusion pipeline for coherent video inpainting (IEEE TCSVT).",
+    "action": "github",
+    "link": "https://github.com/NevSNev/FloED-main"
+  }
+]

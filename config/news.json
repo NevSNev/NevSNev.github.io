@@ -1,0 +1,50 @@
+[
+  {
+    "date": "2026.11",
+    "segments": [
+      { "text": "Our paper " },
+      { "text": "WorldCycle", "strong": true },
+      { "text": " entered the final review stage at AAAI 2026, with reviewer scores " },
+      { "text": "7 / 6 / 6 / 6 / 5", "strong": true },
+      { "text": " (mean 6.0). " },
+      { "text": "Review details", "href": "https://nevsnev.github.io/Worldcycle/#peer-review" },
+      { "text": "." }
+    ]
+  },
+  {
+    "date": "2026.10",
+    "segments": [
+      { "text": "Released " },
+      { "text": "WorldCycle", "href": "https://arxiv.org/abs/2608.04964" },
+      { "text": " — self-verifiable reinforcement learning for long-horizon video world models." }
+    ]
+  },
+  {
+    "date": "2026.07",
+    "segments": [
+      { "text": "Released " },
+      { "text": "WorldCraft", "href": "https://arxiv.org/abs/2605.25077" },
+      { "text": " — unified camera navigation and object manipulation for interactive video world models." }
+    ]
+  },
+  {
+    "date": "2024.12",
+    "segments": [
+      { "text": "Our paper " },
+      { "text": "FloED", "href": "https://arxiv.org/abs/2412.00857" },
+      { "text": " on coherent video inpainting with optical-flow-guided efficient diffusion was accepted to " },
+      { "text": "IEEE TCSVT", "strong": true },
+      { "text": "." }
+    ]
+  },
+  {
+    "date": "2023.07",
+    "segments": [
+      { "text": "Our paper " },
+      { "text": "UniST", "href": "https://arxiv.org/abs/2304.11335" },
+      { "text": " on unified image & video style transfer was accepted to " },
+      { "text": "ICCV 2023", "strong": true },
+      { "text": "." }
+    ]
+  }
+]

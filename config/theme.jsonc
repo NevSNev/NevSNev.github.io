@@ -1,0 +1,15 @@
+{
+  /* Theme palette — teal/forest matching Bohai's original site. */
+  "--theme-color": "#2f8a7b",
+  "--theme-text-color": "var(--theme-color)",
+  "--theme-color-hover": "#226b60",
+  "--theme-color-soft": "#5aa99c",
+  "--theme-color-pale": "#c6e2dc",
+  "--theme-color-border": "#8ec0b7",
+  "--theme-color-surface": "#eef6f3",
+  "--theme-color-surface-soft": "#f2f8f6",
+  "--theme-color-surface-strong": "#e3f0eb",
+  "--theme-color-translucent": "rgba(47, 138, 123, 0.22)",
+  "--theme-action-color": "#2f8a7b",
+  "--theme-action-hover": "#226b60"
+}

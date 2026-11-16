@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <rect width="80" height="80" rx="10" fill="#003366"/>
+  <text x="40" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#fff">HKUST</text>
+  <text x="40" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="500" fill="#c8d4e2">COMPUTER SCI</text>
+</svg>

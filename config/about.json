@@ -1,0 +1,31 @@
+{
+  "paragraphs": [
+    [
+      { "text": "Hi, I'm " },
+      { "text": "Bohai Gu", "strong": true },
+      { "text": " (" },
+      { "text": "辜博海", "strong": true },
+      { "text": "), a Ph.D. student in the Department of Computer Science and Engineering at " },
+      { "text": "the Hong Kong University of Science and Technology (HKUST)", "href": "https://hkust.edu.hk/" },
+      { "text": ", advised by Prof. " },
+      { "text": "Song Guo", "href": "https://cse.hkust.edu.hk/admin/people/faculty/profile/songguo" },
+      { "text": " (IEEE Fellow)." }
+    ],
+    [
+      { "text": "I am currently a research intern at the " },
+      { "text": "AI Technology Center, Tencent Video", "strong": true },
+      { "text": ", and have previously interned at " },
+      { "text": "Alibaba DAMO Academy", "strong": true },
+      { "text": " in Beijing. I received my M.Sc. from the Institute of Software, Chinese Academy of Sciences (ISCAS), and my B.Eng. from the University of Electronic Science and Technology of China (UESTC)." }
+    ],
+    [
+      { "text": "My research focuses on " },
+      { "text": "Interactive Video World Models", "strong": true },
+      { "text": ", with broader interests spanning video generation, diffusion models, and reinforcement learning for long-horizon visual reasoning." }
+    ]
+  ],
+  "quote": {
+    "text": "The world is not yet done; we are still building it, one frame at a time.",
+    "author": "Bohai Gu"
+  }
+}

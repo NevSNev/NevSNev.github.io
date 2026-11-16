@@ -1,0 +1,10 @@
+{
+  "worldcycle": {
+    "template": "basic",
+    "abstractExpanded": true
+  },
+  "worldcraft": {
+    "template": "basic",
+    "abstractExpanded": true
+  }
+}

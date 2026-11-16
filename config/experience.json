@@ -1,0 +1,75 @@
+[
+  {
+    "organization": "HKUST · CSE",
+    "logo": "assets/hkust.svg",
+    "period": "2024.09 — Present",
+    "location": "Hong Kong SAR",
+    "role": "CS Ph.D. Student, Advisor: Prof. Song Guo (IEEE Fellow)",
+    "details": [
+      {
+        "label": "Focus:",
+        "text": "Interactive video world models for long-horizon simulation — self-verifiable generation, controllable editing, and RL from model-internal rewards."
+      },
+      {
+        "label": "Lead:",
+        "text": "WorldCycle (self-verifiable RL for video world models) and WorldCraft (unified camera & object control), with Place-it-R1 on physics-grounded object insertion."
+      }
+    ]
+  },
+  {
+    "organization": "Tencent · AI Technology Center",
+    "logo": "assets/tencent.svg",
+    "period": "2025.01 — 2026.08",
+    "location": "Shenzhen, China",
+    "role": "Research Intern, Tencent Video",
+    "details": [
+      {
+        "label": "Scope:",
+        "text": "Interactive video world models and controllable video generation for Tencent Video and related content pipelines."
+      },
+      {
+        "label": "Output:",
+        "text": "Collaborated on WorldCycle and WorldCraft; built the FloED optical-flow-guided diffusion inpainting pipeline (IEEE TCSVT 2024)."
+      }
+    ]
+  },
+  {
+    "organization": "Alibaba DAMO Academy",
+    "logo": "assets/alibaba.svg",
+    "period": "2024.01 — 2024.09",
+    "location": "Beijing, China",
+    "role": "Research Intern, DAMO Academy",
+    "details": [
+      {
+        "label": "Scope:",
+        "text": "Video generation and editing research at DAMO Academy, with emphasis on diffusion-based controllable video synthesis."
+      }
+    ]
+  },
+  {
+    "organization": "Institute of Software, CAS (ISCAS)",
+    "logo": "assets/iscas.svg",
+    "period": "2021.09 — 2024.07",
+    "location": "Beijing, China",
+    "role": "M.Sc. in Software Engineering",
+    "details": [
+      {
+        "label": "Research:",
+        "text": "Joint image and video style transfer, culminating in UniST (ICCV 2023)."
+      }
+    ]
+  },
+  {
+    "organization": "University of Electronic Science and Technology of China (UESTC)",
+    "logo": "assets/uestc.svg",
+    "period": "2017.09 — 2021.07",
+    "location": "Chengdu, China",
+    "role": "B.Eng. in Software Engineering",
+    "details": [
+      {
+        "label": "Focus:",
+        "text": "Software engineering fundamentals, computer vision, and early deep-learning projects."
+      }
+    ]
+  }
+]

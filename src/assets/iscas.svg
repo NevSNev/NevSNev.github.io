@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <rect width="80" height="80" rx="10" fill="#f6f8fb"/>
+  <rect x="2" y="2" width="76" height="76" rx="9" fill="none" stroke="#2f4f8b" stroke-width="2"/>
+  <text x="40" y="36" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#2f4f8b">ISCAS</text>
+  <text x="40" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="600" fill="#5a6f99">中科院软件所</text>
+</svg>

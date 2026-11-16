@@ -1,0 +1,103 @@
+[
+  {
+    "id": "worldcycle",
+    "image": "assets/publications/worldcycle.png",
+    "title": "WorldCycle: Self-Verifiable Reinforcement Learning for Long-Horizon Video World Models",
+    "abstract": "Long-horizon video world models struggle to remain self-consistent: as the model rolls out hundreds of frames under user interaction, small errors compound and the simulated world drifts away from physical and causal plausibility. We introduce WorldCycle, a self-verifiable reinforcement learning framework that treats the model itself as both the generator and the verifier. The verifier closes a cycle between the user's intended action, the generated video, and the model's own re-inference of that action, providing a reward signal that requires no external annotation. Trained with this signal, the generator learns to produce rollouts whose physics, dynamics, and object interactions are recoverable by the same model that produced them. WorldCycle improves long-horizon consistency across camera control, object manipulation, and game-like interaction settings, while remaining efficient enough for interactive use.",
+    "authors": [
+      { "text": "Bohai Gu", "strong": true },
+      { "text": ", Yueyang Yuan, Taiyi Wu, Dazhao Du, Jian Liu, Xiaoyi Pang, Jie Zhang, Xiaocheng Lu, Haobin Zhong, Xiaotong Zhao, Alan Zhao, Song Guo" }
+    ],
+    "venue": "AAAI '26 (under review)",
+    "venueType": "conference",
+    "authorTag": { "label": "Reviewer scores 7 / 6 / 6 / 6 / 5 · mean 6.0", "type": "rank" },
+    "tags": [
+      "Video World Model",
+      "Reinforcement Learning",
+      "Self-Verification",
+      "Long-Horizon Generation"
+    ],
+    "link": "https://arxiv.org/abs/2608.04964",
+    "citation": "B. Gu, Y. Yuan, T. Wu, D. Du, J. Liu, X. Pang, J. Zhang, X. Lu, H. Zhong, X. Zhao, A. Zhao, and S. Guo, \"WorldCycle: Self-Verifiable Reinforcement Learning for Long-Horizon Video World Models,\" arXiv preprint arXiv:2608.04964, 2026."
+  },
+  {
+    "id": "worldcraft",
+    "image": "assets/publications/worldcraft.gif",
+    "title": "WorldCraft: From Camera Navigation to Object Manipulation in Interactive Video World Models",
+    "abstract": "Interactive video world models have mostly focused on camera navigation, leaving the broader question of in-world editing — moving, inserting, and manipulating objects — underexplored. WorldCraft unifies camera control and object manipulation under a single controllable video generator. By disentangling scene geometry from object dynamics and sharing a control space across both axes, WorldCraft supports fine-grained navigation and object-level edits within the same rollout. The system produces temporally consistent videos in which users can both explore and reshape the generated world.",
+    "authors": [
+      { "text": "Bohai Gu", "strong": true },
+      { "text": ", Taiyi Wu, Yueyang Yuan, Jian Liu, Xiaocheng Lu, Dazhao Du, Jie Zhang, Jinxiang Lai, Shuai Yang, Xiaotong Zhao, Alan Zhao, Song Guo" }
+    ],
+    "venue": "ICLR '27 (under review)",
+    "venueType": "conference",
+    "authorTag": { "label": "NeurIPS 2026 · Not accepted · Mean 4.0 (5 / 4 / 4 / 3)", "type": "note" },
+    "tags": [
+      "Video World Model",
+      "Camera Control",
+      "Object Manipulation",
+      "Interactive Video"
+    ],
+    "link": "https://arxiv.org/abs/2605.25077",
+    "citation": "B. Gu, T. Wu, Y. Yuan, J. Liu, X. Lu, D. Du, J. Zhang, J. Lai, S. Yang, X. Zhao, A. Zhao, and S. Guo, \"WorldCraft: From Camera Navigation to Object Manipulation in Interactive Video World Models,\" arXiv preprint arXiv:2605.25077, 2026."
+  },
+  {
+    "id": "place-it-r1",
+    "image": "assets/publications/place-r1.gif",
+    "title": "Place-it-R1: Physics-Grounded Video Object Insertion via Region-aware Reasoning and Preference Optimization",
+    "abstract": "Inserting new objects into existing video must respect scene geometry, lighting, and dynamics — yet most generative insertion pipelines treat the target region as a 2D patch. Place-it-R1 pairs region-aware reasoning with preference optimization to produce physics-grounded insertions. The reasoning stage selects where and how the object should be anchored given the surrounding scene; the preference stage refines the generator to prefer rollouts that remain physically plausible under motion. The combination improves geometric agreement, temporal stability, and perceived realism of inserted objects.",
+    "authors": [
+      { "text": "Bohai Gu", "strong": true },
+      { "text": ", Taiyi Wu, Dazhao Du, Zicong Hong, Shuai Yang, Alan Zhao, Song Guo" }
+    ],
+    "venue": "AAAI '26 (under review)",
+    "venueType": "conference",
+    "tags": [
+      "Video Editing",
+      "Object Insertion",
+      "Reasoning",
+      "Preference Optimization"
+    ],
+    "link": "https://nevsnev.github.io/Place-it-R1/",
+    "citation": "B. Gu, T. Wu, D. Du, Z. Hong, S. Yang, A. Zhao, and S. Guo, \"Physics-Grounded Video Object Insertion via Region-aware Reasoning and Preference Optimization,\" under review, 2026."
+  },
+  {
+    "id": "floed",
+    "image": "assets/publications/floed.gif",
+    "title": "FloED: Coherent Video Inpainting Using Optical Flow-Guided Efficient Diffusion",
+    "abstract": "Video inpainting requires filling masked regions with content that is both spatially coherent in each frame and temporally consistent across frames. FloED injects optical-flow guidance into a diffusion-based inpainting backbone and reuses a lightweight flow warping module to propagate completed content through time. This reduces the per-frame computation required for a diffusion denoiser while improving motion consistency and object-boundary stability in challenging scenes.",
+    "authors": [
+      { "text": "Bohai Gu", "strong": true },
+      { "text": ", Hao Luo, Song Guo, Peiran Dong, Qihua Zhou" }
+    ],
+    "venue": "IEEE TCSVT '24",
+    "venueType": "journal",
+    "tags": [
+      "Video Inpainting",
+      "Diffusion Models",
+      "Optical Flow"
+    ],
+    "link": "https://arxiv.org/abs/2412.00857",
+    "citation": "B. Gu, H. Luo, S. Guo, P. Dong, and Q. Zhou, \"Coherent Video Inpainting Using Optical Flow-Guided Efficient Diffusion,\" IEEE Transactions on Circuits and Systems for Video Technology, 2024."
+  },
+  {
+    "id": "unist",
+    "image": "assets/publications/unist.png",
+    "title": "Two Birds, One Stone: A Unified Framework for Joint Learning of Image and Video Style Transfers",
+    "abstract": "Image and video style transfer have historically been studied as separate problems with incompatible architectures: image methods ignore time, while video methods rely on auxiliary temporal modules. UniST shows that a single framework can jointly learn both, by letting the model reason over a configurable temporal window that collapses to a single frame for images and expands for video clips. This unification yields a model that transfers consistently across stills and sequences while using fewer parameters than two dedicated models.",
+    "authors": [
+      { "text": "Bohai Gu", "strong": true },
+      { "text": ", Heng Fan, Libo Zhang" }
+    ],
+    "venue": "ICCV '23",
+    "venueType": "conference",
+    "ccf": "CCF A",
+    "tags": [
+      "Style Transfer",
+      "Video",
+      "Unified Framework"
+    ],
+    "link": "https://arxiv.org/abs/2304.11335",
+    "citation": "B. Gu, H. Fan, and L. Zhang, \"Two Birds, One Stone: A Unified Framework for Joint Learning of Image and Video Style Transfers,\" in Proc. IEEE/CVF Int. Conf. Comput. Vis. (ICCV), 2023."
+  }
+]

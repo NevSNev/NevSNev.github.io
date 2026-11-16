@@ -1,0 +1,57 @@
+{
+  "name": "Bohai Gu",
+  "title": "Ph.D. Student · HKUST CSE",
+  "profileImage": "assets/me.jpg",
+  "brandLogo": "assets/brand.svg",
+  "descriptions": [
+    {
+      "icon": "openai",
+      "text": "Interactive Video World Models"
+    },
+    {
+      "icon": "sparkles",
+      "text": "Video Generation & Diffusion"
+    },
+    {
+      "icon": "camera",
+      "text": "Reinforcement Learning · Visual Reasoning"
+    }
+  ],
+  "primaryLinks": [
+    {
+      "label": "arXiv",
+      "url": "https://arxiv.org/a/gu_b_6"
+    },
+    {
+      "label": "Advisor",
+      "url": "https://cse.hkust.edu.hk/admin/people/faculty/profile/songguo"
+    }
+  ],
+  "socialLinks": [
+    {
+      "label": "Email",
+      "icon": "email",
+      "url": "mailto:bhguaa@connect.ust.hk"
+    },
+    {
+      "label": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/NevSNev"
+    },
+    {
+      "label": "Google Scholar",
+      "icon": "scholar",
+      "url": "https://scholar.google.com/citations?user=bohai_gu&hl=en"
+    },
+    {
+      "label": "alphaXiv",
+      "icon": "alphaxiv",
+      "url": "https://www.alphaxiv.org/@bohai-gu"
+    },
+    {
+      "label": "Hugging Face",
+      "icon": "huggingface",
+      "url": "https://huggingface.co/MarcusGu"
+    }
+  ]
+}
