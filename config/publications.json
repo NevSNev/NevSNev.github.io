@@ -3,7 +3,7 @@
     "id": "worldcycle",
     "image": "assets/publications/worldcycle.png",
     "title": "WorldCycle: Self-Verifiable Reinforcement Learning for Long-Horizon Video World Models",
-    "abstract": "Long-horizon video world models struggle to remain self-consistent: as the model rolls out hundreds of frames under user interaction, small errors compound and the simulated world drifts away from physical and causal plausibility. We introduce WorldCycle, a self-verifiable reinforcement learning framework that treats the model itself as both the generator and the verifier. The verifier closes a cycle between the user's intended action, the generated video, and the model's own re-inference of that action, providing a reward signal that requires no external annotation. Trained with this signal, the generator learns to produce rollouts whose physics, dynamics, and object interactions are recoverable by the same model that produced them. WorldCycle improves long-horizon consistency across camera control, object manipulation, and game-like interaction settings, while remaining efficient enough for interactive use.",
+    "abstract": "Interactive video world models are essential for long-horizon planning and exploration, yet they suffer from compounding errors. Post-training methods such as reinforcement learning (RL) can improve these models, but they hit a verification bottleneck: for arbitrary action sequences, no ground-truth future state exists to measure long-term drift. Our key insight is that reversible action cycles make this verification possible: a sequence composed with its inverse must analytically return to the initial state, yielding annotation-free supervision on long-horizon correctness. Building on this, we introduce WorldCycle, a self-verifiable RL framework that constructs closed action cycles and their repeated executions from ordinary action sequences, and optimizes two complementary rewards: a spatial closure reward enforcing symmetry between mirrored forward and reverse segments, and a temporal consistency reward aligning states across repeated cycle executions. These rewards force the model to learn actions as consistent state operators rather than memorized temporal patterns, and extend naturally to out-of-distribution composite action cycles that the base model handles poorly. We further release CycleBench, a diagnostic benchmark for state-returning ability under complex action structures. WorldCycle reduces state-returning drift by up to 44% and lifts composite-action accuracy nearly 4x over the base model, providing a vital foundation for physically grounded world models.",
     "authors": [
       { "text": "Bohai Gu", "strong": true },
       { "text": ", Yueyang Yuan, Taiyi Wu, Dazhao Du, Jian Liu, Xiaoyi Pang, Jie Zhang, Xiaocheng Lu, Haobin Zhong, Xiaotong Zhao, Alan Zhao, Song Guo" }
@@ -24,7 +24,7 @@
     "id": "worldcraft",
     "image": "assets/publications/worldcraft.gif",
     "title": "WorldCraft: From Camera Navigation to Object Manipulation in Interactive Video World Models",
-    "abstract": "Interactive video world models have mostly focused on camera navigation, leaving the broader question of in-world editing — moving, inserting, and manipulating objects — underexplored. WorldCraft unifies camera control and object manipulation under a single controllable video generator. By disentangling scene geometry from object dynamics and sharing a control space across both axes, WorldCraft supports fine-grained navigation and object-level edits within the same rollout. The system produces temporally consistent videos in which users can both explore and reshape the generated world.",
+    "abstract": "Recent video world models enable interactive camera navigation but provide limited control over individual objects. We study persistent object-state control in autoregressive video world models, where an object-trajectory action must remain effective across viewpoint changes, generation chunks, and intervals of temporary invisibility. This setting introduces an action-memory conflict because autoregressive memory records the last observed object state, whereas an intervening action may update that state off-screen. We present WorldCraft, the first camera-navigable autoregressive video world model to jointly compose camera navigation and object-trajectory control. Given a user-selected object and a 2D motion path, Normalized World Trajectory (NWT) anchors the path in a normalized world coordinate system and projects it into each camera view, producing a consistent object-action signal throughout the autoregressive rollout. Trajectory-Anchored State Persistence (TASP) combines persistent NWT guidance with selective memory refresh to maintain action-updated object states through off-screen intervals and re-entry. A pathway-selective LoRA introduces object control while retaining the pretrained camera controller. WorldCraft achieves accurate composable camera-object control and preserves camera fidelity. We further find that it maintains action-updated object states across extended intervals of complete target invisibility without off-screen trajectory supervision.",
     "authors": [
       { "text": "Bohai Gu", "strong": true },
       { "text": ", Taiyi Wu, Yueyang Yuan, Jian Liu, Xiaocheng Lu, Dazhao Du, Jie Zhang, Jinxiang Lai, Shuai Yang, Xiaotong Zhao, Alan Zhao, Song Guo" }
@@ -42,30 +42,30 @@
     "citation": "B. Gu, T. Wu, Y. Yuan, J. Liu, X. Lu, D. Du, J. Zhang, J. Lai, S. Yang, X. Zhao, A. Zhao, and S. Guo, \"WorldCraft: From Camera Navigation to Object Manipulation in Interactive Video World Models,\" arXiv preprint arXiv:2605.25077, 2026."
   },
   {
-    "id": "place-it-r1",
+    "id": "physinsert",
     "image": "assets/publications/place-r1.gif",
-    "title": "Place-it-R1: Physics-Grounded Video Object Insertion via Region-aware Reasoning and Preference Optimization",
-    "abstract": "Inserting new objects into existing video must respect scene geometry, lighting, and dynamics — yet most generative insertion pipelines treat the target region as a 2D patch. Place-it-R1 pairs region-aware reasoning with preference optimization to produce physics-grounded insertions. The reasoning stage selects where and how the object should be anchored given the surrounding scene; the preference stage refines the generator to prefer rollouts that remain physically plausible under motion. The combination improves geometric agreement, temporal stability, and perceived realism of inserted objects.",
+    "title": "PhysInsert: Anticipatory Planning and Spatial Preference Optimization for Physics-Verifiable Video Object Insertion",
+    "abstract": "Video object insertion can produce visually convincing yet physically implausible edits, such as unsupported placement or motion inconsistent with scene forces. We present PhysInsert, an environment-aware framework that couples multimodal large language model (MLLM) reasoning with video diffusion. Its Anticipatory Spatial Reasoning anticipates how an insertion should unfold and grounds the resulting plan into frame-wise regions, providing complementary semantic and spatial conditions for generation. Crucially, many physical violations are verifiable from generated videos. PhysInsert turns localized, evidence-based judgments of generated candidates into preference supervision, and uses them to post-train the generator with Spatial Direct Preference Optimization. By combining global and insertion-localized objectives, Spatial DPO aligns outcome feedback with the regions where physical violations occur while preserving overall video coherence. PhysInsert also provides flexible and standard modes to balance physically motivated scene adaptation against background preservation. We further introduce complementary benchmarks for insertion with provided regions and for autonomous placement and interaction planning without spatial guidance. Experiments on these benchmarks and the existing UNIC benchmark show improved physical plausibility over the evaluated baselines while maintaining competitive object identity and video quality.",
     "authors": [
       { "text": "Bohai Gu", "strong": true },
-      { "text": ", Taiyi Wu, Dazhao Du, Zicong Hong, Shuai Yang, Alan Zhao, Song Guo" }
+      { "text": "*, Taiyi Wu, Dazhao Du, Jian Liu, Shuai Yang, Xiaotong Zhao, Alan Zhao, Yueyang Yuan*, Xiaoyi Pang, Jie Zhang, Song Guo" }
     ],
     "venue": "AAAI '26 (under review)",
     "venueType": "conference",
     "tags": [
       "Video Editing",
       "Object Insertion",
-      "Reasoning",
-      "Preference Optimization"
+      "MLLM Reasoning",
+      "Spatial DPO"
     ],
-    "link": "https://nevsnev.github.io/Place-it-R1/",
-    "citation": "B. Gu, T. Wu, D. Du, Z. Hong, S. Yang, A. Zhao, and S. Guo, \"Physics-Grounded Video Object Insertion via Region-aware Reasoning and Preference Optimization,\" under review, 2026."
+    "link": "https://arxiv.org/abs/2603.06140",
+    "citation": "B. Gu, T. Wu, D. Du, J. Liu, S. Yang, X. Zhao, A. Zhao, Y. Yuan, X. Pang, J. Zhang, and S. Guo, \"PhysInsert: Anticipatory Planning and Spatial Preference Optimization for Physics-Verifiable Video Object Insertion,\" arXiv preprint arXiv:2603.06140, 2026."
   },
   {
     "id": "floed",
     "image": "assets/publications/floed.gif",
-    "title": "FloED: Coherent Video Inpainting Using Optical Flow-Guided Efficient Diffusion",
-    "abstract": "Video inpainting requires filling masked regions with content that is both spatially coherent in each frame and temporally consistent across frames. FloED injects optical-flow guidance into a diffusion-based inpainting backbone and reuses a lightweight flow warping module to propagate completed content through time. This reduces the per-frame computation required for a diffusion denoiser while improving motion consistency and object-boundary stability in challenging scenes.",
+    "title": "Coherent Video Inpainting Using Optical Flow-Guided Efficient Diffusion",
+    "abstract": "The text-guided video inpainting technique has significantly improved the performance of content generation applications. A recent family for these improvements uses diffusion models, which have become essential for achieving high-quality video inpainting results, yet they still face performance bottlenecks in temporal consistency and computational efficiency. This motivates us to propose a new video inpainting framework using optical Flow-guided Efficient Diffusion (FloED) for higher video coherence. Specifically, FloED employs a dual-branch architecture, where the time-agnostic flow branch restores corrupted flow first, and the multi-scale flow adapters provide motion guidance to the main inpainting branch. Besides, a training-free latent interpolation method is proposed to accelerate the multi-step denoising process using flow warping. With the flow attention cache mechanism, FloED efficiently reduces the computational cost of incorporating optical flow. Extensive experiments on background restoration and object removal tasks show that FloED outperforms state-of-the-art diffusion-based methods in both quality and efficiency.",
     "authors": [
       { "text": "Bohai Gu", "strong": true },
       { "text": ", Hao Luo, Song Guo, Peiran Dong, Qihua Zhou" }
@@ -84,7 +84,7 @@
     "id": "unist",
     "image": "assets/publications/unist.png",
     "title": "Two Birds, One Stone: A Unified Framework for Joint Learning of Image and Video Style Transfers",
-    "abstract": "Image and video style transfer have historically been studied as separate problems with incompatible architectures: image methods ignore time, while video methods rely on auxiliary temporal modules. UniST shows that a single framework can jointly learn both, by letting the model reason over a configurable temporal window that collapses to a single frame for images and expands for video clips. This unification yields a model that transfers consistently across stills and sequences while using fewer parameters than two dedicated models.",
+    "abstract": "Current arbitrary style transfer models are limited to either image or video domains. In order to achieve satisfying image and video style transfers, two different models are inevitably required with separate training processes on image and video domains, respectively. In this paper, we show that this can be precluded by introducing UniST, a Unified Style Transfer framework for both images and videos. At the core of UniST is a domain interaction transformer (DIT), which first explores context information within the specific domain and then interacts contextualized domain information for joint learning. In particular, DIT enables exploration of temporal information from videos for the image style transfer task and meanwhile allows rich appearance texture from images for video style transfer, thus leading to mutual benefits. Considering heavy computation of traditional multi-head self-attention, we present a simple yet effective axial multi-head self-attention (AMSA) for DIT, which improves computational efficiency while maintains style transfer performance. To verify the effectiveness of UniST, we conduct extensive experiments on both image and video style transfer tasks and show that UniST performs favorably against state-of-the-art approaches on both tasks. Code is available at https://github.com/NevSNev/UniST.",
     "authors": [
       { "text": "Bohai Gu", "strong": true },
       { "text": ", Heng Fan, Libo Zhang" }

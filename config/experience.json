@@ -12,7 +12,7 @@
       },
       {
         "label": "Lead:",
-        "text": "WorldCycle (self-verifiable RL for video world models) and WorldCraft (unified camera & object control), with Place-it-R1 on physics-grounded object insertion."
+        "text": "WorldCycle (self-verifiable RL for video world models) and WorldCraft (unified camera & object control), with PhysInsert on MLLM-reasoned video object insertion."
       }
     ]
   },

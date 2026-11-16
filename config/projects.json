@@ -16,10 +16,10 @@
     "link": "https://nevsnev.github.io/WorldCraft/"
   },
   {
-    "title": "Place-it-R1 · Project Page",
+    "title": "PhysInsert · Project Page",
     "image": "assets/publications/place-r1.gif",
     "meta": "Video Editing",
-    "text": "Project page for region-aware, physics-grounded video object insertion with preference-optimized generation.",
+    "text": "Project page for PhysInsert — MLLM-driven Anticipatory Spatial Reasoning + Spatial DPO for physics-verifiable video object insertion.",
     "action": "demo",
     "link": "https://nevsnev.github.io/Place-it-R1/"
   },
