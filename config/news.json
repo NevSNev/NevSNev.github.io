@@ -24,17 +24,17 @@
     "segments": [
       { "text": "Released " },
       { "text": "WorldCraft", "href": "https://arxiv.org/abs/2605.25077" },
-      { "text": " — unified camera navigation and object manipulation for interactive video world models." }
+      { "text": " — persistent object-state control in camera-navigable video world models." }
     ]
   },
   {
-    "date": "2024.12",
+    "date": "2026.08",
     "segments": [
       { "text": "Our paper " },
-      { "text": "FloED", "href": "https://arxiv.org/abs/2412.00857" },
-      { "text": " on coherent video inpainting with optical-flow-guided efficient diffusion was accepted to " },
+      { "text": "FloED", "href": "https://doi.org/10.1109/TCSVT.2026.3680155" },
+      { "text": " on optical-flow-guided video inpainting diffusion was published in " },
       { "text": "IEEE TCSVT", "strong": true },
-      { "text": "." }
+      { "text": " (vol. 36, no. 8)." }
     ]
   },
   {

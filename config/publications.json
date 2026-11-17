@@ -23,7 +23,7 @@
   {
     "id": "worldcraft",
     "image": "assets/publications/worldcraft.gif",
-    "title": "WorldCraft: From Camera Navigation to Object Manipulation in Interactive Video World Models",
+    "title": "WorldCraft: Persistent Object-State Control in Camera-Navigable Video World Models",
     "abstract": "Recent video world models enable interactive camera navigation but provide limited control over individual objects. We study persistent object-state control in autoregressive video world models, where an object-trajectory action must remain effective across viewpoint changes, generation chunks, and intervals of temporary invisibility. This setting introduces an action-memory conflict because autoregressive memory records the last observed object state, whereas an intervening action may update that state off-screen. We present WorldCraft, the first camera-navigable autoregressive video world model to jointly compose camera navigation and object-trajectory control. Given a user-selected object and a 2D motion path, Normalized World Trajectory (NWT) anchors the path in a normalized world coordinate system and projects it into each camera view, producing a consistent object-action signal throughout the autoregressive rollout. Trajectory-Anchored State Persistence (TASP) combines persistent NWT guidance with selective memory refresh to maintain action-updated object states through off-screen intervals and re-entry. A pathway-selective LoRA introduces object control while retaining the pretrained camera controller. WorldCraft achieves accurate composable camera-object control and preserves camera fidelity. We further find that it maintains action-updated object states across extended intervals of complete target invisibility without off-screen trajectory supervision.",
     "authors": [
       { "text": "Bohai Gu", "strong": true },
@@ -39,7 +39,7 @@
       "Interactive Video"
     ],
     "link": "https://arxiv.org/abs/2605.25077",
-    "citation": "B. Gu, T. Wu, Y. Yuan, J. Liu, X. Lu, D. Du, J. Zhang, J. Lai, S. Yang, X. Zhao, A. Zhao, and S. Guo, \"WorldCraft: From Camera Navigation to Object Manipulation in Interactive Video World Models,\" arXiv preprint arXiv:2605.25077, 2026."
+    "citation": "B. Gu, T. Wu, Y. Yuan, J. Liu, X. Lu, D. Du, J. Zhang, J. Lai, S. Yang, X. Zhao, A. Zhao, and S. Guo, \"WorldCraft: Persistent Object-State Control in Camera-Navigable Video World Models,\" arXiv preprint arXiv:2605.25077, 2026."
   },
   {
     "id": "physinsert",
@@ -64,13 +64,13 @@
   {
     "id": "floed",
     "image": "assets/publications/floed.gif",
-    "title": "Coherent Video Inpainting Using Optical Flow-Guided Efficient Diffusion",
+    "title": "FloED: Harmonizing Text-Guided Video Inpainting With Optical Flow Diffusion",
     "abstract": "The text-guided video inpainting technique has significantly improved the performance of content generation applications. A recent family for these improvements uses diffusion models, which have become essential for achieving high-quality video inpainting results, yet they still face performance bottlenecks in temporal consistency and computational efficiency. This motivates us to propose a new video inpainting framework using optical Flow-guided Efficient Diffusion (FloED) for higher video coherence. Specifically, FloED employs a dual-branch architecture, where the time-agnostic flow branch restores corrupted flow first, and the multi-scale flow adapters provide motion guidance to the main inpainting branch. Besides, a training-free latent interpolation method is proposed to accelerate the multi-step denoising process using flow warping. With the flow attention cache mechanism, FloED efficiently reduces the computational cost of incorporating optical flow. Extensive experiments on background restoration and object removal tasks show that FloED outperforms state-of-the-art diffusion-based methods in both quality and efficiency.",
     "authors": [
       { "text": "Bohai Gu", "strong": true },
-      { "text": ", Hao Luo, Song Guo, Peiran Dong, Qihua Zhou" }
+      { "text": ", Song Guo" }
     ],
-    "venue": "IEEE TCSVT '24",
+    "venue": "IEEE TCSVT '26",
     "venueType": "journal",
     "tags": [
       "Video Inpainting",
@@ -78,7 +78,7 @@
       "Optical Flow"
     ],
     "link": "https://arxiv.org/abs/2412.00857",
-    "citation": "B. Gu, H. Luo, S. Guo, P. Dong, and Q. Zhou, \"Coherent Video Inpainting Using Optical Flow-Guided Efficient Diffusion,\" IEEE Transactions on Circuits and Systems for Video Technology, 2024."
+    "citation": "B. Gu and S. Guo, \"Harmonizing Text-Guided Video Inpainting With Optical Flow Diffusion,\" IEEE Transactions on Circuits and Systems for Video Technology, vol. 36, no. 8, pp. 12011-12024, Aug. 2026, doi: 10.1109/TCSVT.2026.3680155."
   },
   {
     "id": "unist",
